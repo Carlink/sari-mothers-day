@@ -18,7 +18,7 @@ export default {
   mounted() {
     this.pages.push(null);
     for (let i = 1; i <= 58; i++) {
-      this.pages.push(`/diapositivas/Diapositiva${i}.png`);
+      this.pages.push(`./diapositivas/Diapositiva${i}.png`);
     }
   },
   name: "HelloWorld"
