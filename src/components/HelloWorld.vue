@@ -6,7 +6,6 @@
 
 <script>
 import Flipbook from "flipbook-vue";
-import config from "../../vue.config";
 
 export default {
   components: { Flipbook },
@@ -19,7 +18,7 @@ export default {
   mounted() {
     this.pages.push(null);
     for (let i = 1; i <= 58; i++) {
-      this.pages.push(`${config.publicPath}diapositivas/Diapositiva${i}.png`);
+      this.pages.push(`./diapositivas/Diapositiva${i}.png`);
     }
   },
   name: "HelloWorld"
